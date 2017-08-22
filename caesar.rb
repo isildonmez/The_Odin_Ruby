@@ -7,7 +7,7 @@ def caesar_cipher(str, step)
     elsif (97..122) === letter
       letter = 97 + (letter - 97 + step) % 26
     end
-    ciphered += letter.chr
+    ciphered << letter.chr
   end
   ciphered
 end
